@@ -160,7 +160,6 @@ const CustomerRegistration = () => {
       color: "#334155",
       fontFamily: "inherit",
       background: "white",
-      color: "#334155",
     },
     errorText: {
       fontSize: "0.85rem",
