@@ -8,7 +8,7 @@ import hsbc from "../assets/hsbc.png";
 import union from "../assets/unionbank.png";
 import yes from "../assets/yesbank.png";
 import canara from "../assets/canarabank.jpg";
-import Central from "../assets/Centralbank.png";
+import Central from "../assets/centralbank.png";
 import AIAssistant from "../Components/AI_Assistant";
 
 const About = () => {
