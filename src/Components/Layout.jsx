@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-import "../Styles/layout.css";
+import "../Styles/Layout.css";
 import { useState, useEffect } from "react";
 
 const Layout = ({ children }) => {
