@@ -1,0 +1,22 @@
+:root {
+  /* Color Palette */
+  --primary: #0f2a44; /* deep navy (used for headings, sidebar) */
+  --accent: #fbbf24; /* brand yellow */
+  --accent-700: #f59e0b;
+  --bg-page: #f4f7fb; /* page background used by dashboards */
+  --card-bg: #ffffff;
+  --muted: #666666;
+
+  /* Utilities */
+  --radius: 12px;
+  --shadow: 0 8px 25px rgba(0,0,0,0.08);
+  --btn-shadow: 0 6px 18px rgba(251,191,36,0.12);
+
+  /* Breakpoints */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+
+  /* Spacing */
+  --container-padding: 16px;
+}

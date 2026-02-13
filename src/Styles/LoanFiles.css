@@ -1,0 +1,78 @@
+.loanfiles-page {
+  padding: 30px 40px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.loanfiles-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0f2a44;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.loanfile-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.loanfile-form select,
+.loanfile-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d6dde6;
+  background-color: #f9fbfd;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus Effect */
+.loanfile-form select:focus,
+.loanfile-form input:focus {
+  outline: none;
+  border-color: #0f2a44;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(15, 42, 68, 0.12);
+}
+
+
+.loanfile-form button {
+  grid-column: 1 / -1;
+  background: #0f2a44;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* TABLE */
+.loanfile-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.loanfile-table th,
+.loanfile-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.loanfile-table th {
+  background: #0f2a44;
+  color: white;
+}

@@ -1,0 +1,88 @@
+/* ================= ROOT LAYOUT ================= */
+
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+  /* 🔴 IMPORTANT FIX */
+  height: auto;            /* remove forced 100vh */
+  overflow: visible;       /* allow grid to calculate width properly */
+  background: #f8fafc;
+}
+
+/* ================= SIDEBAR ================= */
+/* Adjust selector if your Sidebar root class differs */
+.layout > aside,
+.layout > .sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+  flex: 1;
+  width: calc(100vw - 260px); /* ✅ reserve sidebar space */
+  max-width: 100%;
+  padding: 24px;
+
+  /* scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+/* ================= MOBILE HEADER ================= */
+
+.mobile-header {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary);
+  color: white;
+  padding: 12px 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 1200;
+  min-height: 64px;
+}
+
+.mobile-header .mobile-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+/* ================= SIDEBAR OVERLAY ================= */
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1100;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .layout {
+    padding-top: 64px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 14px;
+  }
+}

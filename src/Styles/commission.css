@@ -1,0 +1,73 @@
+/* Commission form styles */
+.commission-page {
+  padding: 30px 40px;
+  background: var(--bg-page);
+  min-height: 100vh;
+  color: var(--primary);
+}
+
+/* Center the form and constrain width so it looks good on mobile and desktop */
+.commission-form {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.commission-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.commission-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.commission-form input,
+.commission-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn.submit {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+}
+
+.form-status {
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .commission-page { padding: 18px 12px; }
+  .commission-form { padding: 16px; max-width: 100%; }
+} 

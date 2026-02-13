@@ -1,0 +1,92 @@
+.reports-page {
+  padding: 30px 40px;
+  background: var(--bg-page);
+  min-height: 100vh;
+  color: var(--primary);
+  overflow-x: hidden; /* prevent accidental page-level horizontal scroll */
+}
+
+/* Title */
+.reports-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+/* SUMMARY CARDS */
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.report-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.report-card h3 {
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.report-card p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* TABLE */
+.report-table {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-collapse: collapse;
+  box-shadow: var(--shadow);
+  /* Use table layout so header and rows align on desktop */
+  display: table;
+  table-layout: auto;
+}
+
+/* Header */
+.report-table th {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+/* Rows */
+.report-table td {
+  color: var(--primary);
+  background-color: var(--card-bg);
+  padding: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Header rounding */
+.report-table thead th:first-child { border-top-left-radius: 12px; }
+.report-table thead th:last-child { border-top-right-radius: 12px; }
+
+/* Hover */
+.report-table tr:hover td {
+  background-color: #f7fafc;
+}
+
+@media (max-width: 768px) {
+  .reports-page { padding: 20px 16px; }
+  .reports-title { font-size: 20px; }
+}
+
+@media (max-width: 480px) {
+  .reports-page { padding: 14px 12px; }
+  .reports-title { font-size: 18px; }
+}
